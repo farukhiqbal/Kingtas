@@ -184,7 +184,7 @@ const Home = () => {
         </Carousel.Item>
       </Carousel>
 
-      {/* <Container>
+      <Container>
         <div className="row  mt-6  mb-5 ">
         <div className="col-md-6 col-sm-12 col-lg-6">
   <div className="sm:flex sm:flex-col sm:justify-center md:items-start      text-center px-2">
@@ -252,7 +252,7 @@ const Home = () => {
 
           </div>
         </div>
-      </Container> */}
+      </Container>
 
 
        

@@ -260,7 +260,7 @@ const Admissionhome = () => {
 <div class="text-sm font-bold px-2 mx-auto sm:w-full sm:mx-0 md:w-3/4 lg:w-3/4 md:mx-auto mt-5">
         <h2 class="text-center text-[1.2rem]  md:text-4xl lg:text-4xl">
           <strong>
-          Lady Health Visitors (LHV) (02 years Diploma Program)
+          Lady Health Visitors (LHV) 02 years Program
           </strong>
         </h2>
       </div>

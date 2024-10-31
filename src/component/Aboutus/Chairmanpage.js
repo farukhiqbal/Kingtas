@@ -91,7 +91,7 @@ const Chairmanpage = () => {
   return (
     <>
       <div className="text-center mt-5 mb-4 text-[30px]">
-        <p>Chairman's Message</p>
+        <p>Principal's Message</p>
       </div>
 
       {/* <div className="flex flex-col lg:flex-row">
