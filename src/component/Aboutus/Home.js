@@ -22,11 +22,11 @@ import m9 from "../../assets/images/m9.jpeg";
 import m10 from "../../assets/images/m10.jpeg";
 import m11 from "../../assets/images/m11.jpeg";
 import m12 from "../../assets/images/m12.jpeg";
-
+import video from "../../assets/images/video.mp4";
 import kingbanner3 from "../../assets/images/kingbanner3.jpg";
 import kingbanner from "../../assets/images/kingbanner.jpg";
 import kingbanner2 from "../../assets/images/kingbanner2.jpg";
-import chairman from "../../assets/images/chairman.jpg";
+import chairman from "../../assets/images/chairman.jpeg";
 import nebplogo from "../../assets/images/nebplogo.jpg";
 import pnclogo from "../../assets/images/pnclogo.jpg";
 import Cna from "../../assets/images/cna.jpg";
@@ -34,6 +34,7 @@ import midwife from "../../assets/images/midwife.jpg";
 import health from "../../assets/images/health.jpg";
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
+import Video from "./Video";
 
 const Home = () => {
   const [counteron, setcounteron] = useState(false);
@@ -127,44 +128,52 @@ const Home = () => {
     },
   ];
 
-  // const slider = useRef(null);
+  const slider = useRef(null);
 
-  // const settings = {
-  //   accessibility: true,
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 500,
-  //   arrows: false,
-  //   slidesToShow: 3,
-  //   slidesToScroll: 1,
-  //   responsive: [
-  //     {
-  //       breakpoint: 1023,
-  //       settings: {
-  //         slidesToShow: 3,
-  //         slidesToScroll: 3,
-  //         infinite: true,
-  //         dots: true,
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 768,
-  //       settings: {
-  //         slidesToShow: 2,
-  //         slidesToScroll: 2,
-  //         initialSlide: 2,
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 480,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         slidesToScroll: 1,
-  //         initialSlide: 2,
-  //       },
-  //     },
-  //   ],
-  // };
+  const settings = {
+    accessibility: true,
+    dots: true,
+    infinite: true,
+    speed: 500,
+    arrows: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1023,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
+    ],
+  };
+
+  const videoRef = useRef(null);
+
+  const handleVideoClick = () => {
+    if (videoRef.current) {
+      videoRef.current.play();
+    }
+  };
 
   return (
     <>
@@ -177,14 +186,6 @@ const Home = () => {
           />
         </Carousel.Item>
 
-        {/* <Carousel.Item>
-          <img
-            className="d-block w-100  lg:h-[600px] sm:h-[700px]"
-            src={kingbanner3}
-            alt="Second slide"
-       
-          />
-        </Carousel.Item> */}
         <Carousel.Item>
           <img
             className="d-block w-100  lg:h-[600px] sm:h-[700px]"
@@ -207,16 +208,14 @@ const Home = () => {
                   alt="/"
                   className="mx-auto"
                 />
-                <p className="name-heading mt-2">
-                  Dr. HAFIZ MUKHTAR AHMAD RANDHAWA
-                </p>
+                <p className="name-heading mt-2">Dr. Khalid ur Rehman</p>
               </div>
             </div>
             <div className=" ">
               <span className="member  ">
-                <b className="">
+                {/* <b className="">
                   MEMBERS OF THE RED CRESCENT SOCIETY “EXECUTIVE BODY”
-                </b>
+                </b> */}
               </span>
               <p>
                 "As the chairman of this institution, I anticipate the full
@@ -253,6 +252,10 @@ const Home = () => {
           </div>
         </div>
       </Container>
+
+      <div className="">
+        <Video />
+      </div>
 
       {/* ================ home heading1============================= */}
 
@@ -530,7 +533,7 @@ const Home = () => {
         <div className="flex justify-center flex-wrap">
           {Gallery.map((id) => (
             <div
-              className="relative p-2 block lg:w-1/4 md:w-1/2 w-60 transform transition-transform duration-300 hover:scale-105"
+              className="relative p-2 block lg:w-1/4 md:w-1/2     w-1/1 transform transition-transform duration-300 hover:scale-105"
               key={id}
             >
               <div className="fusion-gallery-image border-2 h-[14rem] sm:w-full md:w-full border-red-400">

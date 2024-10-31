@@ -8,7 +8,7 @@ import nursing4 from '../../assets/images/nursing4.jpg';
 import students from '../../assets/images/students.jpeg';
 import najma from '../../assets/images/najma.jpg';
 import priciple from '../../assets/images/priciple.jpg';
-import chairman from '../../assets/images/chairman.jpg';
+import chairman from '../../assets/images/chairman.jpeg';
 import ams from '../../assets/images/ams.jpg';
 
 
