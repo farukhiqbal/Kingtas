@@ -202,7 +202,7 @@ const Home = () => {
           <div className="col-md-6 col-sm-12 col-lg-6">
             <div className="sm:flex sm:flex-col sm:justify-center md:items-start      text-center px-2">
               <div className="title">
-                <h2 className="mt-[15px]">Principle 's Message</h2>
+                <h2 className="mt-[15px]">Principal 's Message</h2>
                 <img
                   src={chairman}
                   width="250px"
@@ -220,7 +220,7 @@ const Home = () => {
                 </b> */}
               </span>
               <p>
-                "As the chairman of this institution, I anticipate the full
+                "As the principal of this institution, I anticipate the full
                 participation and cooperation of the students and parents to
                 make it possible for us to transform those dreams to reality.
                 And if there is any assistance that you might need, may it be
