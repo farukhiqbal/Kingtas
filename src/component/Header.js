@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { animateScroll as scroll } from "react-scroll";
 import { FiAlignJustify } from "react-icons/fi";
 import { BsChevronDown, BsChevronUp } from "react-icons/bs";
-import logo from "../assets/images/logo.png";
 import mainlogo from "../assets/images/mainlogo.png";
 
 const Header = () => {
@@ -116,7 +115,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="flex   bg-[#3a5683] h-[30px] text-white pt-1  justify-center border-2 border-black   sm:justify-center md:justify-end sm:gap-x-[10px] gap-x-[10px]  md:gap-x-[30px]">
+      <div className="flex   bg-[#3a5683] h-[30px] text-white pt-1  justify-center   sm:justify-center md:justify-end sm:gap-x-[10px] gap-x-[10px]  md:gap-x-[30px]">
         <Link
           to="/login"
           className="        text-[8]   md:text-[10px]   lg:text-[15px] no-underline text-white cursor-pointer hover:text-green-500 hover:text-underline"

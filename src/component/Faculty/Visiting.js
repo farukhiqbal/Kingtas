@@ -24,13 +24,13 @@ const Visiting    = () => {
       id: 2,
       image: kiran,
       title:'Lecturer',
-      name:'Miss.  kiran shahzadi'
+      name:'Miss.  kiran Shahzadi'
     },
     {
       id: 3,
       image: rizwan,
       title:'Computer Lecturer',
-      name:'Miss. USWA'
+      name:'Sir, Rizwan'
     },
   
     

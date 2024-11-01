@@ -1,141 +1,269 @@
-import React from "react";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-// import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import marketing from '../../assets/images/marketing.jpeg'
-import graphic from '../../assets/images/graphic designing.jpeg'
-import officemanagement  from '../../assets/images/office mangement.jpeg'
-import appdevelopment from '../../assets/images/app development.jpeg'
-import multimedia from  '../../assets/images/multimedia.jpeg'
+import React from 'react'
+import marketing from '../../assets/images/marketing.png';
+import graphic from '../../assets/images/graphic designing.jpg'
+import office from '../../assets/images/office_manegment.jpg'
+import  app from  '../../assets/images/app_development.jpg'
+import course1  from '../../assets/images/course1.jpeg'
+import course2  from '../../assets/images/course2.jpeg'
+import course3  from '../../assets/images/course3.jpeg'
+import course4  from '../../assets/images/course4.jpeg'
 
 
 
-const responsive = {
-  superLargeDesktop: {
-    breakpoint: { max: 4000, min: 3000 },
-    items: 4,
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 4,
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 768 },
-    items: 3,
-  },
-  mobile: {
-    breakpoint: { max: 768, min: 0 },
-    items: 1,
-  },
-};
-
-const OfferProgram = ({ deviceType }) => {
-  const Healthimage = [
-   
+const OfferProgram    = () => {
+  const Academicblock = [
+ 
     {
-      title: "office management  ",
-      imagesrc: officemanagement,
-      link: "#",
+      id: 1,
+      image:graphic ,
+      title:'GRAPHIC DESIGNING',
+      name:''
     },
-
-    {
-        title: "Graphic Designing  ",
-        imagesrc: graphic,
-        link: "#",
-      },
-      {
-        title: "Office Management  ",
-        imagesrc: officemanagement,
-        link: "#",
-      },
-
-      {
-        title: "  Android  App Development  ",
-        imagesrc:appdevelopment ,
-        link: "#",
-      },   {
-        title: "  Digital Marketing ",
-        imagesrc: marketing,
-        link: "#",
-      },
-      {
-        title: " MULTIMEDIA  ",
-        imagesrc: multimedia,
-        link: "#",
-      },
-    
    
+    {
+      id: 2,
+      image: office,
+      title:'OFFICE MANAGEMENT ',
+      name:''
+    },
+    {
+      id: 3,
+      image: app,
+      title:'APP DEVELOPMENT ',
+      name:''
+    },
+  
+    {
+      id: 4,
+      image: marketing,
+      title:'DIGITAL MARKETING  ',
+      name:''
+    },
   ];
 
+
+
+
+  const   ourprograms  = [
+ 
+    {
+      id: 1,
+      image:course1 ,
+      title:'',
+      name:''
+    },
+   
+    {
+      id: 2,
+      image: course2,
+      title:'',
+      name:''
+    },
+    {
+      id: 3,
+      image:  course3,
+      title:' ',
+      name:''
+    },
+  
+    {
+      id: 4,
+      image: course4,
+      title:'',
+      name:''
+    },
+  ];
+
+
+
+
   return (
-    <div className="w-full py-2 md:py-[3rem]    lg:mt-[3rem]">
-      <div className="w-full mx-auto md:w-[85vw] lg:w-[85vw] xl:w-[85vw] 2xl:w-[85vw] md:mx-auto">
-        <h2 className="text-center font-bold    text-3xl  lg:text-5xl mb-[2rem]">
-          OUR OFFERS PROGRAMS 
-        </h2>
+    <div>
 
-        <Carousel
-          swipeable={false}
-          draggable={false}
-          showDots={false}
-          responsive={responsive}
-          ssr={true}
-          infinite={true}
-          autoPlay={deviceType !== "mobile" ? true : false}
-          autoPlaySpeed={2000}
-          keyBoardControl={true}
-          removeArrowOnDeviceType={[""]} // Remove arrow buttons on all device types
-          customTransition="all .5"
-          transitionDuration={500}
-          containerClass="carousel-container"
-          deviceType={deviceType}
-          dotListClass="custom-dot-list-style"
-          itemClass="carousel-item-padding-40-px"
-          renderButtonGroupOutside={true} // Render button group outside of carousel
-          //   customLeftArrow={
-          //     <div className="absolute  transform -translate-y-1/2 left-[-7px]">
-          //       <button className="bg-gray-300 text-black  p-3   hover:bg-[#2e3092] hover:text-white rounded-md ml-2">
-          //         <FaChevronLeft />
-          //       </button>
-          //     </div>
-          //   } // Custom left arrow
-          //   customRightArrow={
-          //     <div className="absolute  transform -translate-y-1/2 right-0">
-          //       <button className="bg-gray-300 text-black  p-3   hover:bg-[#2e3092] hover:text-white rounded-md ml-2">
-          //         <FaChevronRight />
-          //       </button>
-          //     </div>
-          //   } // Custom right arrow
-        >
-          {Healthimage.map((image) => (
-            <div
-              key={image.id}
-              className=" relative w-[400px]  rounded-lg   mx-auto md:w-[300px]  lg:w-[300px] h-[50vh]"
-            >
-              <div className="w-full md:w-[298px]  h-[250px]">
-                <img
-                  src={image.imagesrc}
-                  className="mx-auto w-full h-full rounded-md"
-                  alt=""
-                />
-              </div>
 
-              <div 
-  className="py-2 rounded-md mt-[1.5rem] border-2 border-black hover:bg-black hover:text-white  transition duration-200 ease-in-out"
->
-  <p 
-    className="ml-1 text-lg py-2 text-center text-capitalize  mt-[1px] font-semibold "
-  >
-    {image.title}
-  </p>
+
+
+
+
+
+
+
+   {/* ================ home heading1============================= */}
+     
+     
+   <div className="col-span-12   sm:mb-1 md:mt-10 lg:mt-10 xl:mt-10  ">
+  <div className="Heading text-center text-white">
+    <h1 className="text-[2rem] sm:text-xl md:text-2xl lg:text-4xl xl:text-6xl uppercase font-elaineSans-ExtraLight transition-all duration-300 ease-in-out">
+      <span className="text-black sm:mb-[2rem]"> OUR   PROGRAMS </span>
+    </h1>
+  </div>
 </div>
+
+
+        <div className="container mx-auto  mt-[3rem] mb-[13rem] p-1">
+        <div className="flex justify-center flex-wrap ">
+          {/* Image 1 */}
+
+          {ourprograms.map((id) => (
+            <div className="w-full h-full xm:w-1/1 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-4">
+              <div className="bg-center bg-no-repeat bg-cover p-5">
+                <div className="person person-center person-2 person-icon-top">
+                  <div className="person-shortcode-image-wrapper  ">
+                    <div
+                      className="person-image-container  justify-center  text-center  h-[27rem] sm:h-[1rem] md:h-[18rem]  ease-in-out duration-300  transition-all   border-3 border-gray-200 overflow-hidden "
+                      style={{
+
+                        // border: "0px solid #e2e2e2",
+                        // boxShadow: "3px 3px 7px rgba(0, 0, 0, 0.3)",
+                      }}
+                    >
+                      <img
+                        decoding="async"
+                        className="person-img img-responsive  wp-image-854 w-full  h-full  object-cover overflow-hidden transform transition-transform duration-500 hover:scale-[1.5]"
+                        src={id.image}
+                        
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div className="person-desc text-center">
+                    <div className="person-author block w-full">
+                      <div className="person-author-wrapper block w-full ">
+                        <span className="person-name block text-[20px]  mt-3">
+                           {id.title}
+                        </span>
+                        <span className="person-title block  font-semibold text-[25px]">
+                         {id.name}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="fusion-clearfix"></div>
+              </div>
             </div>
           ))}
-        </Carousel>
+        </div>
       </div>
 
-    </div>
-  );
-};
 
-export default OfferProgram;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   {/* ================ home heading1============================= */}
+     
+     
+   <div className="col-span-12   sm:mb-1 md:mt-10 lg:mt-10 xl:mt-10  ">
+  <div className="Heading text-center text-white">
+    <h1 className="text-[2rem] sm:text-xl md:text-2xl lg:text-4xl xl:text-6xl uppercase font-elaineSans-ExtraLight transition-all duration-300 ease-in-out">
+      <span className="text-black sm:mb-[2rem]"> OUR  COMPUTER  PROGRAMS </span>
+    </h1>
+  </div>
+</div>
+
+
+        <div className="container mx-auto  mt-[3rem] mb-[13rem] p-1">
+        <div className="flex justify-center flex-wrap ">
+          {/* Image 1 */}
+
+          {Academicblock.map((id) => (
+            <div className="w-full h-full xm:w-1/1 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-4">
+              <div className="bg-center bg-no-repeat bg-cover p-5">
+                <div className="person person-center person-2 person-icon-top">
+                  <div className="person-shortcode-image-wrapper  ">
+                    <div
+                      className="person-image-container  justify-center  text-center  h-[27rem] sm:h-[1rem] md:h-[18rem] rounded-[40px]  glow person-rounded-overflow  ease-in-out duration-300  transition-all   border-3 border-gray-200 overflow-hidden "
+                      style={{
+
+                        border: "0px solid #e2e2e2",
+                        boxShadow: "3px 3px 7px rgba(0, 0, 0, 0.3)",
+                      }}
+                    >
+                      <img
+                        decoding="async"
+                        className="person-img img-responsive  wp-image-854 w-full  h-full  object-cover overflow-hidden transform transition-transform duration-500 hover:scale-[1.5]"
+                        src={id.image}
+                        
+                        alt="Vice Principal"
+                      />
+                    </div>
+                  </div>
+                  <div className="person-desc text-center">
+                    <div className="person-author block w-full">
+                      <div className="person-author-wrapper block w-full ">
+                        <span className="person-name block text-[20px]  mt-3">
+                           {id.title}
+                        </span>
+                        <span className="person-title block  font-semibold text-[25px]">
+                         {id.name}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="fusion-clearfix"></div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  )
+}
+
+export default OfferProgram; 

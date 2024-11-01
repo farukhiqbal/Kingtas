@@ -30,7 +30,7 @@ const Nursing = () => {
       id: 3,
       image: rizwan,
       title:'Computer Lecturer',
-      name:'Miss. USWA'
+      name:'Sir Rizwan'
     },
   
     

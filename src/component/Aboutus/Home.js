@@ -202,7 +202,7 @@ const Home = () => {
           <div className="col-md-6 col-sm-12 col-lg-6">
             <div className="sm:flex sm:flex-col sm:justify-center md:items-start      text-center px-2">
               <div className="title">
-                <h2 className="mt-[15px]">Chairman's Message</h2>
+                <h2 className="mt-[15px]">Principle 's Message</h2>
                 <img
                   src={chairman}
                   width="250px"
