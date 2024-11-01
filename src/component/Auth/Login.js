@@ -89,7 +89,7 @@ const Login = () => {
                 <button type="submit">Login</button>
               </form>
               <br/>
-              <Link  to="/register"  className='no-underline text-black   hover:underline'><p className=' '>Create the account </p></Link>
+              <Link  to="#"  className='no-underline text-black   hover:underline'><p className=' '>Create the account </p></Link>
             </div>
           </div>
     

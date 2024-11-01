@@ -119,23 +119,23 @@ const Header = () => {
         <Link
           to="/login"
           className="        text-[8]   md:text-[10px]   lg:text-[15px] no-underline text-white cursor-pointer hover:text-green-500 hover:text-underline"
-        >  Sign In
+        >
+          {" "}
+          Sign In
         </Link>
         <Link
           to="#"
           className="   text-[8]   md:text-[10px]   lg:text-[15px]   no-underline text-white cursor-pointer hover:text-green-500  "
-        >| Apply Now
+        >
+          | Apply Now
         </Link>
         <Link
           to="/"
-          className="text-[15px] mr-[4rem]  no-underline text-white cursor-pointer hover:text-green-500 "
+          className="text-[15px] mr-[4rem]     sm:display-none   md:display-none   lg:display xl:display  no-underline text-white cursor-pointer hover:text-green-500 "
         >
-         
           | Career Opportunities
         </Link>
       </div>
-      
-
 
       <div
         className={`sticky top-0 z-[1000] text-black Georgian bg-white px-4 md:px-6 w-full border-b-2 border-red-700 `}
