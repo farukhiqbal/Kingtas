@@ -55,12 +55,12 @@ const Header = () => {
       url: "#",
       submenu: true,
       dropdown: [
-        { name: " Principle's Message", link: "#" },
+        { name: "  Principal's Message", link: "#" },
         { name: " Board Of Trustees", link: "#" },
         { name: "  Mission & Vision", link: "/mission&vision" },
         { name: "   History", link: "#" },
         { name: "    Accreditation", link: "#" },
-        { name: " School Infrasture   ", link: "#" },
+        { name: " College infrastructure   ", link: "#" },
       ],
     },
 

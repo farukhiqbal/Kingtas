@@ -202,7 +202,7 @@ const Home = () => {
           <div className="col-md-6 col-sm-12 col-lg-6">
             <div className="sm:flex sm:flex-col sm:justify-center md:items-start      text-center px-2">
               <div className="title">
-                <h2 className="mt-[15px]">Principal 's Message</h2>
+                <h2 className="mt-[15px]">Principal's Message</h2>
                 <img
                   src={chairman}
                   width="250px"
@@ -300,7 +300,7 @@ const Home = () => {
                 Scope of (CNA){" "}
               </Link>
             </h3>
-            <p className="mt-2 pt-2 text-xl leading-[3rem]">
+            <p className="mt-2 pt-2 text-xl  justify-normal   leading-[3rem]">
               Certified Nursing Assistant (CNA) is a (02) Two-years professional
               education program leading to practice as a Registered Nurse. The
               diploma program offers integrated nursing knowledge, skills and
