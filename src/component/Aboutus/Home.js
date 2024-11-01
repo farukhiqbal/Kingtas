@@ -35,6 +35,8 @@ import health from "../../assets/images/health.jpg";
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 import Video from "./Video";
+import OfferProgram from "./OfferProgram";
+import bcategory from "../../assets/images/b-category.jpeg";
 
 const Home = () => {
   const [counteron, setcounteron] = useState(false);
@@ -253,10 +255,6 @@ const Home = () => {
         </div>
       </Container>
 
-      <div className="">
-        <Video />
-      </div>
-
       {/* ================ home heading1============================= */}
 
       <div className="col-span-12  mb-5 md:mb-0 lg:mb-10 xl:mb-15 md:mt-[5rem] ">
@@ -266,10 +264,15 @@ const Home = () => {
           </h1>
         </div>
       </div>
+
+      <div className="">
+        <Video />
+      </div>
+
       {/* =====================================end =========================== */}
 
       <div className="w-full bg-[#f2f2f7df] h-full p-5 mt-5">
-        <div class="text-sm font-bold px-2 mx-auto sm:w-full sm:mx-0 md:w-3/4 lg:w-3/4 md:mx-auto mt-5">
+        <div class="text-sm font-bold     lg:pl-0 mx-auto sm:w-full sm:mx-0 md:w-3/4 lg:w-3/4 md:mx-auto mt-5">
           <h2 class="text-left text-[1.6rem]  md:text-4xl lg:text-4xl">
             <strong>Certified Nursing Assistant (CNA) 2 Year Program</strong>
           </h2>
@@ -286,7 +289,7 @@ const Home = () => {
             </Link>
           </div>
 
-          <div className="w-full md:w-3/4 lg:w-[40rem] p-2">
+          <div className="w-full md:w-3/4 lg:w-[40rem]   p-1  md:p-2">
             <h3 className="font-bold sm:text-center md:text-left lg:left">
               <Link
                 to=""
@@ -313,7 +316,7 @@ const Home = () => {
       {/* =========================================CNA part EnD======================================= */}
 
       <div className="w-full  h-full p-5">
-        <div class="text-sm font-bold px-2 mx-auto sm:w-full sm:mx-0 md:w-3/4 lg:w-3/4 md:mx-auto mt-5">
+        <div class="text-sm font-bold  mx-auto sm:w-full sm:mx-0 md:w-3/4 lg:w-3/4 md:mx-auto mt-5">
           <h2 class="text-left text-[1.6rem]  md:text-4xl lg:text-4xl">
             <strong>Community Midwife (CMW) 2 Year Program</strong>
           </h2>
@@ -330,15 +333,14 @@ const Home = () => {
             </Link>
           </div>
 
-          <div className="w-full md:w-3/4 lg:w-[40rem] p-2">
+          <div className="w-full md:w-3/4 lg:w-[40rem]  p-1  md:p-2">
             <h3 className="font-bold sm:text-center md:text-left lg:left">
               <Link
                 to=""
                 target="_blank"
                 className="text-black no-underline text-2xl line-clamp-[5rem]"
               >
-                {" "}
-                Scope of (CMW){" "}
+                Scope of (CMW)
               </Link>
             </h3>
             <p className="mt-2 pt-2 text-xl leading-[3rem]">
@@ -355,8 +357,8 @@ const Home = () => {
 
       {/* ======================================cmw part end ============================================== */}
 
-      <div className="w-full bg-[#f2f2f7df]  h-full  p-5 md:py-1">
-        <div class="text-sm font-bold px-2 mx-auto sm:w-full sm:mx-0 md:w-3/4 lg:w-3/4 md:mx-auto mt-5">
+      <div className="w-full bg-[#f2f2f7df]  h-full  p-5 md:py-1  xl:mb-[3rem]  ">
+        <div class="text-sm font-bold mx-auto sm:w-full sm:mx-0 md:w-3/4 lg:w-3/4 md:mx-auto mt-5">
           <h2 class="text-left text-[1.6rem]  md:text-4xl lg:text-4xl">
             <strong>Lady Health Visitors (LHV) 2 Year Program</strong>
           </h2>
@@ -397,9 +399,56 @@ const Home = () => {
 
       {/* ================================================lhv part end ================================= */}
 
+      <div className="w-full   h-full  p-5 md:py-1  xl:mb-[3rem]  ">
+        <div class="text-sm font-bold mx-auto sm:w-full sm:mx-0 md:w-3/4 lg:w-3/4 md:mx-auto mt-5">
+          <h2 class="text-left text-[1.6rem]  md:text-4xl lg:text-4xl">
+            <strong>B-Category Program in Pharmacy and Medical Sciences</strong>
+          </h2>
+        </div>
+
+        <div className="flex flex-col md:flex-row lg:flex-row md:justify-evenly mx-auto justify-center py-5">
+          <div className="w-full md:w-1/4 lg:w-1/4 p-">
+            <Link to="#" className="no-underline text-center md:pt-5">
+              <img
+                className="w-full  h-[40vh]  md:full lg:w-full  md:h-[50vh]   lg:h-[50vh]"
+                src={bcategory}
+                alt=""
+              />
+            </Link>
+          </div>
+
+          <div className="w-full md:w-3/4 lg:w-[40rem] p-2">
+            <h3 className="font-bold sm:text-center md:text-left lg:left">
+              <Link
+                to=""
+                target="_blank"
+                className="text-black no-underline text-2xl line-clamp-[5rem]"
+              >
+                {" "}
+                Scope of B-Category{" "}
+              </Link>
+            </h3>
+            <p className="mt-2 pt-2 text-xl leading-[3rem]">
+              A B-Pharmacy graduate can work in hospitals, community pharmacies,
+              clinics, and pharmaceutical companies, focusing on medication
+              management, patient counseling, and drug safety. Employment
+              options include both public and private sectors, with roles in
+              drug development, quality assurance, and regulatory compliance.
+              Graduates support public health by ensuring safe medication use
+              and advancing pharmaceutical research. This degree also provides a
+              foundation for specialized studies in pharmacy and healthcare.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* ================================================lhv part end ================================= */}
+
+      <OfferProgram className="my-[3rem]" />
+
       {/* =============================home heading 2 ========================= */}
 
-      <div className="col-span-12 mb-5 md:mb-2 lg:mb-32 xl:mb-8 mt-[5rem]">
+      <div className="col-span-12 mb-5 md:mb-2 lg:mb-32 xl:mb-8   mt-[5rem]">
         <div className="Heading text-center text-white">
           <h1 className="text-[2rem] sm:text-xl md:text-2xl lg:text-4xl xl:text-6xl uppercase font-elaineSans-ExtraLight transition-all duration-300 ease-in-out">
             <span className="text-black"> VISion & mission</span>

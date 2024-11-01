@@ -38,20 +38,20 @@ function App() {
             <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='/home' element={<Home/>}/>
-              <Route path='/chairman' element={<Chairmanpage/>}/>
+              {/* <Route path='/chairman' element={<Chairmanpage/>}/> */}
               <Route path='/meritlist' element={<MeritList/>}/>
               <Route path='/feestructure' element={<FeeStructure/>}/>
               <Route path='/admissionoffice' element={<AdmissionOffice/>}/>
               <Route path='/testdate' element={<TestDates/>}/>
               <Route path='/ruleandpolicy' element={<Rulesandpolicy/>}/>
               <Route path='/guide' element={<AdmissionGuide/>}/>
-              <Route path='//schoolinfrasture' element={<SchoolInfrasture/>}/>
+              <Route path='#' element={<SchoolInfrasture/>}/>
             
               <Route path='/admissionhome' element={<Admissionhome/>}/>
 
 
              
-              <Route path='/nursing' element={<Nursing/>}/>
+              <Route path='/teaching-staff' element={<Nursing/>}/>
       
               <Route path='/visiting' element={<Visiting/>}/>
               <Route path='/admin' element={<AdminStaff/>}/>

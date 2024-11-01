@@ -7,8 +7,8 @@ const Register = () => {
       <div className="container-fluid  p-3 dashboard">
         <div className="row  mt-5">
           <div className="col-md-3 ">
-            {/* <img src="./images/mainlogo.png" className="w-50" alt="" /> */}
-            {/* <div className="mt-5">
+            <img src="./images/mainlogo.png" className="w-50" alt="" />
+            <div className="mt-5">
               <h3 class="border-2 border-black text-center py-1 cursor-pointer hover:bg-red-600 hover:text-white">
                 Register
               </h3>
@@ -18,7 +18,7 @@ const Register = () => {
               </h3>
               </Link>
             
-            </div> */}
+            </div>
           </div>
 
 

@@ -1,9 +1,9 @@
 import React from 'react'
-import nursing3 from '../../assets/images/nursing3.jpg';
-import nursing2 from '../../assets/images/nursing2.png';
-import nursing4 from '../../assets/images/nursing4.jpg';
-import nursing from '../../assets/images/nursing.jpg';
-import fozia from '../../assets/images/fozia.jpg';
+import viceprinciple from '../../assets/images/viceprinciple.HEIC';
+import uswa from '../../assets/images/Miss-uswa.jpeg'
+import kiran from '../../assets/images/miss-kiran.jpeg'
+import rizwan from '../../assets/images/rizwan.jpeg'
+
 
 
 
@@ -11,38 +11,29 @@ import fozia from '../../assets/images/fozia.jpg';
 const Nursing = () => {
   const Academicblock = [
  
+  
+   
     {
       id: 1,
-      image: nursing,
-      title:'Nursing Instructor',
-      name:'Nighat Rubeena'
-    },
-  
-    {
-      id: 2,
-      image: nursing3,
-      title:'Nursing Instructor',
-      name:'Asma Parveen'
-    },
-    {
-      id: 3,
-      image:nursing4,
-      title:'Nursing Instructor',
-      name:'Miss Hira'
+      image:uswa ,
+      title:'Lecturer',
+      name:'Miss. USWA'
     },
    
     {
-      id: 4,
-      image: nursing2,
-      title:'Nursing Instructor',
-      name:'Shameem Akhtar'
+      id: 2,
+      image: kiran,
+      title:'Lecturer',
+      name:'Miss.  kiran shahzadi'
     },
     {
-      id: 5,
-      image: fozia,
-      title:'English Lecture',
-      name:'Fozia Tahir'
-    }
+      id: 3,
+      image: rizwan,
+      title:'Computer Lecturer',
+      name:'Miss. USWA'
+    },
+  
+    
   ];
 
 
@@ -69,7 +60,7 @@ const Nursing = () => {
         <div className="flex justify-center flex-wrap ">
           {/* Image 1 */}
 
-          {/* {Academicblock.map((id) => (
+          {Academicblock.map((id) => (
             <div className="w-full h-full xm:w-1/1 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-4">
               <div className="bg-center bg-no-repeat bg-cover p-5">
                 <div className="person person-center person-2 person-icon-top">
@@ -107,7 +98,7 @@ const Nursing = () => {
                 <div className="fusion-clearfix"></div>
               </div>
             </div>
-          ))} */}
+          ))}
         </div>
       </div>
     </div>

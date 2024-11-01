@@ -1,32 +1,44 @@
 import React from 'react'
-import viceprinciple from '../../assets/images/viceprinciple.png';
-import najma from '../../assets/images/najma.jpg';
-import students from '../../assets/images/students.jpeg';
-
-
+import viceprinciple from '../../assets/images/viceprinciple.HEIC';
+import uswa from '../../assets/images/Miss-uswa.jpeg'
+import kiran from '../../assets/images/miss-kiran.jpeg'
+import rizwan from '../../assets/images/rizwan.jpeg'
 const AdminStaff = () => {
   const Academicblock = [
     {
       id: 1,
       image: viceprinciple,
       title:'Vice Principal',
-      name:'Bushra Farzana'
+      name:'Areeba Azam'
     },
    
     {
       id: 2,
-      image: najma,
-      title:'Student Affairs',
-      name:'Miss. Najma'
+      image:uswa ,
+      title:'Lecturer',
+      name:'Miss. USWA'
     },
    
- 
     {
-      id:3 ,
-      image:students,
-      title:'IT Department',
-      name:'Rimsha Razzaq'
+      id: 3,
+      image: kiran,
+      title:'Lecturer',
+      name:'Miss.  kiran shahzadi'
     },
+    {
+      id: 4,
+      image: rizwan,
+      title:'Computer Lecturer',
+      name:'Miss. USWA'
+    },
+    // {
+    //   id: 5,
+    //   image: ,
+    //   title:'LECTURER',
+    //   name:'Miss. USWA'
+    // },
+   
+    
   ];
 
   return (
@@ -45,7 +57,7 @@ const AdminStaff = () => {
         <div className="flex justify-center flex-wrap ">
           {/* Image 1 */}
 
-          {/* {Academicblock.map((id) => (
+          {Academicblock.map((id) => (
             <div className="w-full h-full xm:w-1/1 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-4">
               <div className="bg-center bg-no-repeat bg-cover p-5">
                 <div className="person person-center person-2 person-icon-top">
@@ -83,7 +95,7 @@ const AdminStaff = () => {
                 <div className="fusion-clearfix"></div>
               </div>
             </div>
-          ))} */}
+          ))}
         </div>
       </div>
 

@@ -1,15 +1,7 @@
 import React from "react";
-import viceprinciple from '../../assets/images/viceprinciple.png';
-import nursing from '../../assets/images/nursing.jpg';
-import nursing2  from '../../assets/images/nursing2.png';
-import nursing3 from '../../assets/images/nursing3.jpg';
-import english from '../../assets/images/english.jpg';
-import nursing4 from '../../assets/images/nursing4.jpg';
-import students from '../../assets/images/students.jpeg';
-import najma from '../../assets/images/najma.jpg';
-import priciple from '../../assets/images/priciple.jpg';
-import chairman from '../../assets/images/chairman.jpeg';
-import ams from '../../assets/images/ams.jpg';
+import viceprinciple from '../../assets/images/viceprinciple.HEIC';
+
+// import ams from '../../assets/images/ams.jpg';
 
 
 import hod from '../../assets/images/hod.jpg';
@@ -27,19 +19,19 @@ const Chairmanpage = () => {
     },
     {
       id: 2,
-      image: nursing,
+      image: viceprinciple,
       title:'Nursing Instructor',
       name:'Nighat Rubeena'
     },
     {
       id: 3,
-      image: nursing2,
+      image: viceprinciple,
       title:'Nursing Instructor',
       name:'Rafiqan Bibi'
     },
     {
       id: 4,
-      image: nursing3,
+      image: viceprinciple,
       title:'Nursing Instructor',
       name:'Asma Parveen'
     },
@@ -47,39 +39,39 @@ const Chairmanpage = () => {
 
     {
       id: 5,
-      image: english,
+      image: viceprinciple,
       title:'English Lecturer',
       name:'Fozia Tahir'
     },
 
     {
       id: 6,
-      image: nursing4,
+      image: viceprinciple,
       title:'Nursing Instructor',
       name:'Miss Hira'
     },
     {
       id: 7,
-      image: najma,
+      image: viceprinciple,
       title:'Student Affairs',
       name:'Miss. Najma'
     },
     {
       id: 8,
-      image: nursing,
+      image: viceprinciple,
       title:'Nursing Instructor',
       name:'Nighat Rubeena'
     },
     {
       id: 9,
-      image: nursing2,
+      image: viceprinciple,
       title:'Nursing Instructor',
       name:'Shameem Akhtar'
     },
 
     {
       id:10 ,
-      image: students,
+      image: viceprinciple,
       title:'IT Department',
       name:'Rimsha Razzaq'
     },
@@ -94,7 +86,7 @@ const Chairmanpage = () => {
         <p>Principal's Message</p>
       </div>
 
-      {/* <div className="flex flex-col lg:flex-row">
+      <div className="flex flex-col lg:flex-row">
         <div className="lg:w-1/4 lg:mr-4">
         <div className="bg-cover bg-top    h-45 pb-[5rem] relative">
  
@@ -109,7 +101,7 @@ const Chairmanpage = () => {
                   }}>
                   <img
                     className="person-img w-full h-[400px] md:h-75 md:w-75 lg:h-full  rounded-[40px]  object-cover "
-                    src={priciple}
+                    src={viceprinciple}
                     alt="Principal"
                   />
                 </div>
@@ -188,7 +180,7 @@ const Chairmanpage = () => {
                   <img
                     decoding="async"
                     className="person-img img-responsive wp-image-854 w-full h-full object-cover rounded-full"
-                    src={chairman}
+                    src={viceprinciple}
                
                   />
                 </div>
@@ -224,7 +216,7 @@ const Chairmanpage = () => {
                   <img
                     decoding="async"
                     className="person-img img-responsive wp-image-854 w-full h-full object-cover rounded-full"
-                    src={ams}
+                    src={viceprinciple}
                    
                   />
                 </div>
@@ -261,7 +253,7 @@ const Chairmanpage = () => {
                   <img
                     decoding="async"
                     className="person-img img-responsive wp-image-854 w-full h-full object-cover rounded-full"
-                    src={hod}
+                    src={viceprinciple}
                     alt="hod"
                   />
                 </div>
@@ -282,11 +274,11 @@ const Chairmanpage = () => {
             <div className="fusion-clearfix"></div>
           </div>
         </div>
-      </div> */}
+      </div>
 
       {/* =================================================end image part============================= */}
 
-      {/* <div className="flex flex-wrap justify-center w-full mb-5 mt-5">
+      <div className="flex flex-wrap justify-center w-full mb-5 mt-5">
         <div className="w-full md:w-1/2 lg:w-1/2 mb-1 md:mb-1">
           <div className="bg-cover  relative animate__animated animate__rubberBand">
             <div className="fusion-text text-center">
@@ -294,13 +286,13 @@ const Chairmanpage = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
-      {/* <div className="container mx-auto  mb-[13rem] p-1">
+      <div className="container mx-auto  mb-[13rem] p-1">
         <div className="flex justify-center flex-wrap ">
-          Image 1 */}
+          Image 1
 
-          {/* {Academicblock.map((id) => (
+          {Academicblock.map((id) => (
             <div className="w-full h-full xm:w-1/1 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-4">
               <div className="bg-center bg-no-repeat bg-cover p-5">
                 <div className="person person-center person-2 person-icon-top">
@@ -340,7 +332,7 @@ const Chairmanpage = () => {
             </div>
           ))}
         </div>
-      </div> */}
+      </div>
     </>
   );
 };
