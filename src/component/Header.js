@@ -89,13 +89,31 @@ const Header = () => {
     },
 
     {
-      text: "  List of Program",
+      text: "List of Program",
       url: "#",
       submenu: true,
       dropdown: [
         { name: "LHV 2 Year Program ", link: "/lhvprogram" },
-        { name: "   CNA 2 Year Program", link: "/cnaprogram" },
-        { name: "    CMW 2 Year Program    ", link: "/cmwprogram" },
+        { name: "CNA 2 Year Program", link: "/cnaprogram" },
+        { name: "CMW 2 Year Program    ", link: "/cmwprogram" },
+        {
+          name: "  OPERATION THEATER  TECHNOLOGY  ",
+          link: "/operation-theater-technology",
+        },
+        {
+          name: "  RADIOGRAPHIC TECHNOLOGY    ",
+          link: "/radio-graphic-technology",
+        },
+        {
+          name: "  MEDICAL LAB TECHNOLOGY     ",
+          link: "/medical-lab-technology",
+        },
+        { name: "  DENTAL TECHNOLOGY    ", link: "/dental-technology" },
+        {
+          name: "  ANESTHESIA TECHNOLOGY     ",
+          link: "/anesthesia-technology",
+        },
+        { name: "  DISPENSER TECHNOLOGY     ", link: "/dispenser-technology" },
       ],
     },
 
@@ -153,7 +171,11 @@ const Header = () => {
             </div>
             <div className="flex  items-center">
               <Link to="/" onClick={handleLinkClick}>
-                <img className="h-[70px] " src={mainlogo} alt="" />
+                <img
+                  className="h-[70px]           w-[15rem]     lg:w-[16rem]    xl:w-[20rem]"
+                  src={mainlogo}
+                  alt=""
+                />
               </Link>
             </div>
           </div>
@@ -264,17 +286,17 @@ const Header = () => {
                       />
                     )}
 
-                    <div className=" ml- mt-2  flex flex-col justify-center border-b-2 border-black items-center max-h-[40vh] overflow-y-auto">
+                    <div className=" ml- mt-2  flex flex-col justify-center border-b-2 border-black items-center max-h-[60vh] overflow-y-auto">
                       {li.submenu && submenuStates[index] && nav && (
-                        <ul className="pt-0">
+                        <ul className="pt-0  mt-[3.7rem] h-auto ">
                           {li.dropdown.map((submenuItem, subIndex) => (
                             <Link
                               to={submenuItem.link}
-                              className="text-black no-underline"
+                              className="text-black no-underline  "
                             >
                               <li
                                 key={subIndex}
-                                className=" text-black/70 text-md ease-out   transition-all duration-200  gap-x-4 cursor-pointer    rounded-md py-2   hover:rounded hover:bg-black/5 hover:text-red-700"
+                                className=" text-black/70 text-md ease-out   transition-all duration-200  gap-x-2 cursor-pointer  h-auto  rounded-md py-[.4rem]   hover:rounded hover:bg-black/5 hover:text-red-700"
                                 onClick={() => {
                                   setNav(!nav);
                                 }}

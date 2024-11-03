@@ -9,7 +9,7 @@ import "./home.css";
 // import ScrollTrigger from "react-scroll-trigger";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import BackgroundImage from "./BackgroundImage";
+// import BackgroundImage from "./BackgroundImage";
 import m1 from "../../assets/images/m1.jpeg";
 import m2 from "../../assets/images/m2.jpeg";
 import m3 from "../../assets/images/m3.jpeg";
@@ -26,7 +26,7 @@ import video from "../../assets/images/video.mp4";
 import kingbanner3 from "../../assets/images/kingbanner3.jpg";
 import kingbanner from "../../assets/images/kingbanner.jpg";
 import kingbanner2 from "../../assets/images/kingbanner2.jpg";
-import chairman from "../../assets/images/chairman.jpeg";
+// import chairman from "../../assets/images/chairman.jpeg";
 import nebplogo from "../../assets/images/nebplogo.jpg";
 import pnclogo from "../../assets/images/pnclogo.jpg";
 import Cna from "../../assets/images/cna.jpg";
@@ -35,8 +35,10 @@ import health from "../../assets/images/health.jpg";
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 import Video from "./Video";
+import chairman from "../../assets/images/chairman.jpeg";
 import OfferProgram from "./OfferProgram";
 import bcategory from "../../assets/images/b-category.jpeg";
+import medicalfaculty from '../../assets/images/medicalfaculty.png'
 
 const Home = () => {
   const [counteron, setcounteron] = useState(false);
@@ -197,63 +199,92 @@ const Home = () => {
         </Carousel.Item>
       </Carousel>
 
-      <Container>
-        <div className="row  mt-6  mb-5 ">
-          <div className="col-md-6 col-sm-12 col-lg-6">
-            <div className="sm:flex sm:flex-col sm:justify-center md:items-start      text-center px-2">
-              <div className="title">
-                <h2 className="mt-[15px]">Principal's Message</h2>
-                <img
-                  src={chairman}
-                  width="250px"
-                  height="250px"
-                  alt="/"
-                  className="mx-auto"
-                />
-                <p className="name-heading mt-2">Dr. Khalid ur Rehman</p>
-              </div>
-            </div>
-            <div className=" ">
-              <span className="member  ">
-                {/* <b className="">
-                  MEMBERS OF THE RED CRESCENT SOCIETY “EXECUTIVE BODY”
-                </b> */}
-              </span>
-              <p>
-                "As the principal of this institution, I anticipate the full
-                participation and cooperation of the students and parents to
-                make it possible for us to transform those dreams to reality.
-                And if there is any assistance that you might need, may it be
-                personal or professional, I shall always be willing to hear from
-                you."
-              </p>
-            </div>
+      <div className="w-full  h-full  p-5  xl:p-5    xl:mt-5">
+        <div class="text-sm font-bold     lg:pl-0 mx-auto sm:w-full sm:mx-0 md:w-3/4 lg:w-3/4 md:mx-auto mt-5">
+          <h2 class="   text-center    lg:text-left text-[1.6rem]  md:text-4xl lg:text-4xl">
+            <strong>Chairman's Message</strong>
+          </h2>
+        </div>
+
+        <div className="  flex-col   md:flex lg:flex-row md:justify-evenly md:mx-auto lg:mx-auto justify-center py-5">
+          <div className="w-full md:w-1/4 lg:w-1/4 p-1">
+            <Link to="#" className="no-underline text-center  md:pt-5">
+              <img
+                className="w-full  h-[40vh]   rounded-lg  shadow-black  md:full lg:w-full  md:h-[50vh]   lg:h-[50vh]"
+                src={chairman}
+                alt=""
+                style={{
+
+                  border: "0px solid #e2e2e2",
+                  boxShadow: "3px 3px 7px rgba(0, 0, 0, 0.3)",
+                }}
+              />
+            </Link>
           </div>
 
-          <div className="col-md-6  col-sm-12     ">
-            <br />
-            <br />
-            <div className=" row mt-5   main-council">
-              <div className="col-md-6 col-sm-12  col-lg-6 council-logo-left">
-                <img src={nebplogo} alt="/" fluid />
-                <h4 className="text-center mt-2">Pakistan Nursing Council</h4>
-              </div>
-
-              <div className="col-md-6 col-sm-12 mb-5 council-logo-right">
-                <img
-                  src={pnclogo}
-                  alt="/"
-                  // width="250px"
-                  // height="250px"
-                  fluid
-                />
-
-                <h4 className="text-center mt-2">Nursing Examination Board</h4>
-              </div>
-            </div>
+          <div className="w-full md:w-3/4 lg:w-[40rem]   p-1  md:p-2">
+            <h3 className="font-bold   mt-3  sm:text-center md:text-left lg:left">
+              <Link
+                to=""
+                target="_blank"
+                className="   text-black no-underline text-2xl line-clamp-[5rem]"
+              >
+                Dr. Tahir Farooq
+              </Link>
+            </h3>
+            <p className="mt-2 pt-2 text-xl  justify-normal   leading-[3rem]">
+              "As the Chairman of this institution, I anticipate the full
+              participation and cooperation of the students and parents to make
+              it possible for us to transform those dreams to reality. And if
+              there is any assistance that you might need, may it be personal or
+              professional, I shall always be willing to hear from you."
+            </p>
           </div>
         </div>
-      </Container>
+      </div>
+
+      {/* =========================================   chairman ======================================= */}
+
+
+      <div class="text-sm font-bold  mb-6 lg:pl-0 mx-auto sm:w-full sm:mx-0 md:w-3/4 lg:w-3/4 md:mx-auto mt-5">
+          <h2 class="   text-center    lg:text-left text-[1.6rem]  mb-3  md:text-4xl   xl:text-4xl">
+            <strong>Affiliated  by Punjab Medical Council </strong>
+          </h2>
+        </div>
+
+         <div className="relative    mb-[3rem]     xl:mt-[3rem]  h-auto  lg:h-[80%]    xl:h-[40vh]  w-[80%]    mx-auto   grid   grid-cols-1   md:grid-cols-2   lg:grid-cols-3  xl:grid-cols-3">
+
+             <div className=" relative  ">
+             <img
+                  src={medicalfaculty}
+                  alt="/"
+                   className="w-[15rem]   h-[15rem]  mx-auto "
+      
+                />
+                                <h4 className=" mt-4   text-center  ">Punjab Medical Faculty </h4>
+
+                   </div>
+
+                   <div className=" ">
+             <img
+                  src={nebplogo}
+                  alt="/"
+                   className="w-[15rem] mx-auto  h-[15rem] "
+      
+                />
+               <h4 className=" mt-4   text-center  ">Nursing Examination Board</h4>
+                   </div>
+                   <div className="  ">
+             <img
+                  src={pnclogo}
+                  alt="/"
+                   className="w-[15rem]  mx-auto h-[15rem] "
+      
+                />
+                            <h4 className=" mt-4  text-center    " >Pakistan Nursing Council</h4>
+                   </div>
+         </div>
+
 
       {/* ================ home heading1============================= */}
 

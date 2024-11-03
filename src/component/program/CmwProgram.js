@@ -48,7 +48,7 @@ const CmwProgram = () => {
 
 
 <div class="text-sm font-bold px-2 mx-auto sm:w-full sm:mx-0 md:w-3/4 lg:w-3/4 md:mx-auto mt-[4rem]">
-  <h2 class="text-left text-[1.2rem]  md:text-xl lg:text-xl">
+  <h2 class="text-left text-[1.2rem]  md:text-xl lg:text-xl    xl:text-2xl">
     <strong>Eligibility Criteria (CMW 2 Years  Program) :</strong>
   </h2>
 </div>
@@ -57,7 +57,7 @@ const CmwProgram = () => {
 
 
 
-<div class="w-full   mx-auto sm:w-full md:w-3/4 lg:w-3/4 xl:w-3/4 p-2 md:text-[1rem] lg:text-[1rem] xl:text-[1rem] md:mx-auto">
+<div class="w-full   mx-auto sm:w-full md:w-3/4 lg:w-3/4 xl:w-3/4 p-2 md:text-[1rem] lg:text-[1rem] xl:text-[1.2rem] md:mx-auto">
  
 <ol class="list-decimal pl-4 text-[#00000078]">
     <li>Metric with Science or arts 40% minimum.</li>

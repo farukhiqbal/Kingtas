@@ -47,7 +47,7 @@ const Nursing = () => {
    {/* ================ home heading1============================= */}
      
      
-   <div className="col-span-12   sm:mb-1 md:mt-10 lg:mt-10 xl:mt-10  ">
+   <div className="col-span-12 mt-2 pt-3 sm:mb-1 md:mt-10 lg:mt-10 xl:mt-10  ">
   <div className="Heading text-center text-white">
     <h1 className="text-[2rem] sm:text-xl md:text-2xl lg:text-4xl xl:text-6xl uppercase font-elaineSans-ExtraLight transition-all duration-300 ease-in-out">
       <span className="text-black sm:mb-[2rem]"> Teaching  Faculty</span>

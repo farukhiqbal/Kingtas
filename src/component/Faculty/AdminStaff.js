@@ -3,8 +3,16 @@ import viceprinciple from "../../assets/images/viceprinciple.HEIC";
 import uswa from "../../assets/images/Miss-uswa.jpeg";
 import kiran from "../../assets/images/miss-kiran.jpeg";
 import rizwan from "../../assets/images/rizwan.jpeg";
+import principal from "../../assets/images/principal.jpeg";
 const AdminStaff = () => {
   const Academicblock = [
+    {
+      id: 1,
+      image: principal,
+      title: "Principal",
+      name: "Dr. Khalid ur Rehman",
+    },
+
     {
       id: 1,
       image: viceprinciple,
@@ -41,10 +49,13 @@ const AdminStaff = () => {
 
   return (
     <div>
-      <div className="col-span-12   sm:mb-1 md:mt-10 lg:mt-10 xl:mt-10  ">
+      <div className="col-span-12   mt-[2rem] sm:mb-1 md:mt-10 lg:mt-10 xl:mt-10  ">
         <div className="Heading text-center text-white">
           <h1 className="text-[2rem] sm:text-xl md:text-2xl lg:text-4xl xl:text-6xl uppercase font-elaineSans-ExtraLight transition-all duration-300 ease-in-out">
-            <span className="text-black sm:mb-[2rem]"> Admin Staff</span>
+            <span className="text-black    sm:mt-[1rem]   sm:mb-[2rem]">
+              {" "}
+              Admin Staff
+            </span>
           </h1>
         </div>
       </div>
