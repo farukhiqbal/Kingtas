@@ -38,7 +38,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
+        {/* <Route path="/home" element={<Home />} /> */}
         {/* <Route path='/chairman' element={<Chairmanpage/>}/> */}
         <Route path="/meritlist" element={<MeritList />} />
         <Route path="/feestructure" element={<FeeStructure />} />
