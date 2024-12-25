@@ -61,9 +61,12 @@ function App() {
         <Route path="/radio-graphic-technology" element={<RadioGraphic />} />
         <Route path="/medical-lab-technology" element={<MedicalLab />} />
         <Route path="/dental-technology" element={<DentalTechnology />} />
-        <Route path="/anesthesia-technology" element={<Anesthesia_Technology />} />
+        <Route
+          path="/anesthesia-technology"
+          element={<Anesthesia_Technology />}
+        />
         <Route path="/dispenser-technology" element={<Dispenser />} />
-       
+
         <Route path="/news" element={<NewsandEvents />} />
         <Route path="/annualreport" element={<AnnualReport />} />
         <Route path="/noticeboard" element={<NoticeBoard />} />
